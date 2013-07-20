@@ -34,9 +34,9 @@ body { background: url(../img/body_bg.jpg );}
 }
 
 #search form { margin: 0; overflow: hidden}
-#search label, #search #searchsubmit {display: none;}
+#search label, #search #searchsubmit, .newsletter-submit {display: none;}
 
-input#s {
+input#s, input.newsletter-email {
 background: #EFEFEF url(../img/search.png) no-repeat 5px 7px;
 -moz-border-radius: 3px;
 font-size: 14px;
