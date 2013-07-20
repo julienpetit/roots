@@ -2,7 +2,7 @@
    Base
    ========================================================================== */
 
-body { }
+body { background: url(../img/body_bg.jpg );}
 
 
 
@@ -10,9 +10,46 @@ body { }
    Header
    ========================================================================== */
 
-.banner { }
+.banner { margin-top: 30px; }
+.banner h1 { font-size: 5em}
+.banner h1 a {font-family: 'Clicker Script', cursive; text-decoration: none}
 
+.banner h2 { font-size: 1.8em; font-family: 'Clicker Script', cursive; text-decoration: none; margin-top: 40px; }
 
+.banner .navbar a { text-transform: uppercase; font-family: 'Bitter'}
+
+/* =============================================================================
+   First Page
+   ========================================================================== */
+.news { font-size: 20px;}
+
+#search {
+   background: #FFF;
+   box-shadow: 0 0 3px rgba(0,0,0,0.2);
+   border-radius: 3px;
+   padding: 5px;
+   margin-left: 2px;
+   margin-top: 2px;
+   margin-bottom: 20px;
+}
+
+#search form { margin: 0; overflow: hidden}
+#search label, #search #searchsubmit {display: none;}
+
+input#s {
+background: #EFEFEF url(../img/search.png) no-repeat 5px 7px;
+-moz-border-radius: 3px;
+font-size: 14px;
+height: 24px;
+line-height: 1.2em;
+font-family: helvetica, arial;
+font-weight: 300;
+border: 1px solid #FFF;
+box-shadow: none;
+padding: 4px 10px 4px 28px;
+margin: 0;
+width: 100%;
+}
 
 /* ==========================================================================
    Content
@@ -20,7 +57,14 @@ body { }
 
 .content { }
 
+figure.thumbnail {width: auto !important; margin-bottom: 10px;}
 
+.thumbnails.gallery li.span4:nth-child(3N + 1) {
+   margin-left: 0;
+}
+
+
+.page-header {text-align: center}
 
 /* ==========================================================================
    Primary Content
@@ -36,20 +80,47 @@ body { }
 
 .sidebar { }
 
-
+/* Widget */
+.widget .widget-inner ul {background : white; list-style-type: none; padding-left: 0px; margin: 0; border-radius: 5px; box-shadow: 0 0 3px rgba(0,0,0,0.2);}
+.widget .widget-inner ul  li {
+   list-style: circle;
+   padding: 10px 15px;
+   border-bottom: solid 1px #DDD;
+   list-style-position: inside;
+}
+.widget .widget-inner ul  li:last-child { border-bottom: none; }
 
 /* ==========================================================================
    Posts
    ========================================================================== */
 
-.hentry header { }
+.hentry header { text-align: center; font-family: 'Clicker Script'; font-size: 2em;}
+.hentry header h1 { font-size: 2em;}
 .hentry time { }
 .hentry .byline { }
-.hentry .entry-content { }
+/*.hentry .entry-content { background-color: white;}*/
 .hentry footer { }
 
+.hentry .entry-content { 
+background: #FFF;
+box-shadow: 0 0 3px rgba(0,0,0,0.2);
+border-radius: 3px;
+padding: 10px;
+}
+
+.widget h3 { text-align: center;}
+
+article.post {margin-bottom: 60px;}
+article.sticky header {display: none;}
+article.sticky .entry-content {background: none; border: none; box-shadow: none; padding: 0;}
 
 
+/*@media (min-width: 767px) {
+article.post .thumbnails > li {
+   width: 29%;
+}
+}
+*/
 /* ==========================================================================
    Footer
    ========================================================================== */

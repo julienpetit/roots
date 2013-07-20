@@ -76,14 +76,17 @@ function roots_gallery($attr) {
     }
     return $output;
   }
-
-  $output = '<ul class="thumbnails gallery">';
+  // $output = '<div class="container-fluid">';
+  $output .= '<div class="row-fluid">';
+  $output .= '<ul class="thumbnails gallery">';
 
   $i = 0;
   foreach ($attachments as $id => $attachment) {
     $image = ('file' == $link) ? wp_get_attachment_link($id, $size, false, false) : wp_get_attachment_link($id, $size, true, false);
 
-    $output .= '<li>' . $image;
+    $image = str_replace("width=\"250\"", " ", $image);
+    $image = str_replace("height=\"250\"", " ", $image);
+    $output .= '<li class="span4">' . $image;
     if (trim($attachment->post_excerpt)) {
       $output .= '<div class="caption hidden">' . wptexturize($attachment->post_excerpt) . '</div>';
     }
@@ -91,7 +94,8 @@ function roots_gallery($attr) {
   }
 
   $output .= '</ul>';
-
+  $output .= '</div>';
+  // $output .= '</div>';
   return $output;
 }
 if (current_theme_supports('bootstrap-gallery')) {
