@@ -14,7 +14,7 @@
  * 4. /theme/assets/js/main.js    (in footer)
  */
 function roots_scripts() {
-  // wp_enqueue_style('roots_bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.css', false, null);
+  wp_enqueue_style('roots_bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.css', false, null);
 
   wp_enqueue_style('roots_bootstrap_responsive', get_template_directory_uri() . '/assets/css/bootstrap-responsive.css', null);
   wp_enqueue_style('roots_app', get_template_directory_uri() . '/assets/css/app.css', false, null);
