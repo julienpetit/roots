@@ -23,7 +23,7 @@ body { background: url(../img/body_bg.jpg );}
    ========================================================================== */
 .news { font-size: 20px;}
 
-#search {
+#search, .newsletter-widget {
    background: #FFF;
    box-shadow: 0 0 3px rgba(0,0,0,0.2);
    border-radius: 3px;
@@ -32,8 +32,8 @@ body { background: url(../img/body_bg.jpg );}
    margin-top: 2px;
    margin-bottom: 20px;
 }
-
-#search form { margin: 0; overflow: hidden}
+#search p, .newsletter-widget p {margin: 0}
+#search form, .newsletter-widget form { margin: 0; overflow: hidden}
 #search label, #search #searchsubmit, .newsletter-submit {display: none;}
 
 input#s, input.newsletter-email {
