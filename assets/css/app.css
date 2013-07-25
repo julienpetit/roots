@@ -148,3 +148,21 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 @media (max-width: 767px) {
 
 }
+
+
+
+/* ==========================================================================
+   Gallery
+   ========================================================================== */
+.gallery-item {
+   float: left;
+   margin-left: 1.0%;
+}
+br + .gallery-item {
+   margin-left : 0;
+}
+
+.gallery.gallery-columns-4 .gallery-item { width: 24%; }
+.gallery.gallery-columns-3 .gallery-item { width: 32%; }
+.gallery.gallery-columns-2 .gallery-item { width: 49%; }
+
