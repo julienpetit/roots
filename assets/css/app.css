@@ -154,6 +154,7 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
 /* ==========================================================================
    Gallery
    ========================================================================== */
+.gallery-item:first-child {margin-left: 0; } 
 .gallery-item {
    float: left;
    margin-left: 1.0%;
