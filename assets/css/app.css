@@ -23,7 +23,7 @@ body { background: url(../img/body_bg.jpg );}
    ========================================================================== */
 .news { font-size: 20px;}
 
-#search, .newsletter-widget {
+#search, .newsletter-widget, #searchform {
    background: #FFF;
    box-shadow: 0 0 3px rgba(0,0,0,0.2);
    border-radius: 3px;
@@ -33,8 +33,8 @@ body { background: url(../img/body_bg.jpg );}
    margin-bottom: 20px;
 }
 #search p, .newsletter-widget p {margin: 0}
-#search form, .newsletter-widget form { margin: 0; overflow: hidden}
-#search label, #search #searchsubmit, .newsletter-submit {display: none;}
+#search form, .newsletter-widget form, #searchform div { margin: 0; overflow: hidden}
+#search label, #search #searchsubmit, .newsletter-submit, #searchform label, #searchform input[type=submit]{display: none;}
 
 input#s, input.newsletter-email {
 background: #EFEFEF url(../img/search.png) no-repeat 5px 7px;
