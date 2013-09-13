@@ -7,6 +7,7 @@
   <meta charset="utf-8">
   <title><?php wp_title('|', true, 'right'); ?></title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="http://www.catherineboutique.fr/wp-content/uploads/favicon.ico" />
 <!-- <link rel="stylesheet/less" href="/assets/less/bootstrap.less" type="text/css"> -->
 <!-- <script type='text/javascript' src='/assets/less/less-1.4.1.min.js'></script> -->
   <?php wp_head(); ?>
