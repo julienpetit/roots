@@ -14,7 +14,7 @@ $posts = $query->get_posts();
 ?>
 
 
-<div class="row">
+<div class="row hidden-phone">
   <div class="span4"><?php dynamic_sidebar('sidebar-homeleft'); ?></div>
   <div class="span4"><?php dynamic_sidebar('sidebar-homecenter'); ?></div>
   <div class="span4"><?php dynamic_sidebar('sidebar-homeright'); ?></div>
