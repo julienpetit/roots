@@ -1,6 +1,6 @@
 <?php if(isset($post)) : ?>
 <article class="post-tiled">
-  <header><h class="text-center"><a href="<?php echo $post->post_permalink; ?>"><?php echo $post->post_title; ?></a></h3></header>
+  <header><h3 class="text-center"><a href="<?php echo $post->post_permalink; ?>"><?php echo $post->post_title; ?></a></h3></header>
   <div class="well-white">
 
 
