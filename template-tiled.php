@@ -7,7 +7,7 @@ $query = new WP_Query(array(
                         'post_type' => 'post', 
                         'post_status' => 'publish',
                         'posts_per_page' => get_option('posts_per_page'),
-                        'paged' => get_query_var('paged')
+                        'paged' => get_query_var('page')
                         ));
 $posts = $query->get_posts();
 
@@ -59,5 +59,6 @@ foreach ($posts as $key => $post) {
 <?php endforeach; ?>
 </div>
 
+  
 
 
