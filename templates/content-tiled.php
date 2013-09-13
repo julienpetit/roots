@@ -14,4 +14,5 @@
 
   </div>
 </article>
+<hr />
 <?php endif; ?> 
