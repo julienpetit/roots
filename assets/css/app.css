@@ -4,7 +4,18 @@
 
 body { background: url(../img/body_bg.jpg );}
 
+.btn-black {  color: white; 
 
+color: #ffffff;
+text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+background-color: #444;
+background-image: none;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffee5f5b', endColorstr='#ffbd362f', GradientType=0);
+border-color: #bd362f #bd362f #802420;
+border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+
+}
 
 /* =============================================================================
    Header
@@ -114,6 +125,13 @@ article.post {margin-bottom: 60px;}
 article.sticky header {display: none;}
 article.sticky .entry-content {background: none; border: none; box-shadow: none; padding: 0;}
 
+
+
+
+.post-tiled {}
+.post-tiled header h3{
+   font-family: 'Clicker Script';
+}
 
 /*@media (min-width: 767px) {
 article.post .thumbnails > li {

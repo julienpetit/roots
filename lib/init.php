@@ -11,10 +11,16 @@ function roots_setup() {
     'primary_navigation' => __('Primary Navigation', 'roots'),
   ));
 
-  // Add post thumbnails (http://codex.wordpress.org/Post_Thumbnails)
-  add_theme_support('post-thumbnails');
-  // set_post_thumbnail_size(150, 150, false);
-  // add_image_size('category-thumb', 300, 9999); // 300px wide (and unlimited height)
+
+  if ( function_exists( 'add_theme_support' ) ) { 
+    // add_theme_support( 'post-thumbnails' );
+    // set_post_thumbnail_size( 150, 150, true ); // default Post Thumbnail dimensions (cropped)
+
+    // additional image sizes
+    // delete the next line if you do not need additional image sizes
+    add_image_size( 'category-thumb', 330, 9999, true ); //300 pixels wide (and unlimited height)
+  }
+
 
   // Add post formats (http://codex.wordpress.org/Post_Formats)
   // add_theme_support('post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat'));

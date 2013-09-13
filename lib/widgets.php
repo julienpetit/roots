@@ -22,6 +22,15 @@ function roots_widgets_init() {
     'after_title'   => '</h3>',
   ));
 
+  register_sidebar(array(
+    'name'          => __('Home', 'roots'),
+    'id'            => 'sidebar-home',
+    'before_widget' => '<section class="span4 widget %1$s %2$s"><div class="widget-inner">',
+    'after_widget'  => '</div></section>',
+    'before_title'  => '<h3>',
+    'after_title'   => '</h3>',
+  ));
+
   // Widgets
   register_widget('Roots_Vcard_Widget');
 }
