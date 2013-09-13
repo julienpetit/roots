@@ -29,7 +29,8 @@ function get_first_image( $postID ) {
     foreach ( $attachments as $attachment ) {
       $image_attributes = wp_get_attachment_image_src( $attachment->ID, 'medium' )  ? wp_get_attachment_image_src( $attachment->ID, 'medium' ) : wp_get_attachment_image_src( $attachment->ID, 'full' );
 
-      return wp_get_attachment_image_src( $attachment->ID , 'medium')[0];
+      $obj = wp_get_attachment_image_src( $attachment->ID , 'medium');
+      return $obj[0];
     }
   }
 }
