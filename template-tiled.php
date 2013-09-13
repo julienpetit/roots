@@ -2,14 +2,14 @@
 /*
 Template Name: template-tiled.php
 */
-
-$query = new WP_Query(array(
-                        'post_type' => 'post', 
-                        'post_status' => 'publish',
-                        'posts_per_page' => get_option('posts_per_page'),
-                        'paged' => get_query_var('page')
-                        ));
-$posts = $query->get_posts();
+global $wp_query;
+// $wp_querye = new WP_Query(array(
+//                         'post_type' => 'post', 
+//                         'post_status' => 'publish',
+//                         'posts_per_page' => get_option('posts_per_page'),
+//                         'paged' => get_query_var('page')
+//                         ));
+// $posts = $wp_query->get_posts();
 
 ?>
 
@@ -59,6 +59,12 @@ foreach ($posts as $key => $post) {
 <?php endforeach; ?>
 </div>
 
-  
-
+<?php if ($wp_query->max_num_pages > 1) : ?>
+  <nav class="post-nav">
+    <ul class="pager">
+      <li class="previous"><?php next_posts_link(__('&larr; Older posts', 'roots')); ?></li>
+      <li class="next"><?php previous_posts_link(__('Newer posts &rarr;', 'roots')); ?></li>
+    </ul>
+  </nav>
+<?php endif; ?>
 

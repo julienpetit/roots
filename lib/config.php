@@ -56,7 +56,7 @@ function roots_display_sidebar() {
      */
     array(
       // 'is_404',
-      // 'is_front_page'
+      'is_front_page'
       // 'home',
 
       
@@ -66,9 +66,7 @@ function roots_display_sidebar() {
      * Any of these page templates that return true won't show the sidebar
      */
     array(
-      'template-tiled.php',
-      // 'is_front_page',
-      // 'home'
+
       // array('is_home', array()),
 
     )
