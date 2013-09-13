@@ -31,8 +31,6 @@ $columns[2] = array();
 $i = 0;
 
 foreach ($posts as $key => $post) {
-  // $post->featured_image = wp_get_attachment_image( get_post_thumbnail_id($post->ID), 'large');
-  $post->featured_image = get_the_post_thumbnail(null, 'large');
   $post->post_permalink = get_permalink($post->ID);
   if($i == 3)
     $i = 0;
