@@ -8,7 +8,10 @@
 
     <hr />
     <footer>
+
       <a class="btn btn-black btn-mini" href="<?php echo $post->post_permalink; ?>">Voir l'article</a>
+
+      <span class="pull-right"><time class="updated" datetime="<?php echo get_the_time('c'); ?>" pubdate> <?php echo get_the_date(); ?></time></span>
     </footer>
 
 
