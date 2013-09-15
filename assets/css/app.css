@@ -17,6 +17,20 @@ filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 
 }
 
+.follow-us {
+
+}
+
+.follow-us:hover {
+   text-decoration: none;
+   -moz-transform: scale(1.2);
+   -webkit-transform: scale(1.2);
+   -o-transform: scale(1.2);
+   -ms-transform: scale(1.2);
+   transform: scale(1.2);
+   opacity: 1;
+}
+
 /* =============================================================================
    Header
    ========================================================================== */
