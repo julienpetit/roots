@@ -21,7 +21,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
 
 }
 
-.follow-us:hover {
+.follow-us img:hover {
    text-decoration: none;
    -moz-transform: scale(1.2);
    -webkit-transform: scale(1.2);
